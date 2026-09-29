@@ -21,6 +21,7 @@ body {
     min-height: 200vh;
 }
 
+/* navbar */
 .navbar {
     position: fixed;
     top: 20px;
@@ -107,5 +108,5 @@ body {
     transform: translatey(-3px);
 }
 
-
+/* Hero  */
 
