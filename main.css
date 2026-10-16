@@ -73,6 +73,10 @@
   --font-main: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 body {
   font-family: var(--font-main);
 }
@@ -199,7 +203,7 @@ body {
   color: var(--home-heading);
   display: flex;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .home {
@@ -374,6 +378,7 @@ body {
   font-size: 13px;
   font-weight: 500;
   transition: 0.3s ease;
+  margin-top: 10px;
 }
 
 .hero-socials a:hover {
@@ -387,4 +392,19 @@ body {
   padding: 100px 7%;
   color: var(--about-heading);
   position: relative;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left {
+  animation: fadeDown 2s ease-out;
 }
