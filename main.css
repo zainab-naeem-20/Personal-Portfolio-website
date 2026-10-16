@@ -1,116 +1,192 @@
 :root {
-  --color-sky-blue: #A0D2EB;
-  --color-lavender: #D0BDFA;
-  --color-purple: #8458B3;
-  --color-slate-dark: #494D5F;
-  --color-light-bg: #E5EAF5;
 
-  --neon-violet: #726EFF;
-  --neon-cyan: #0BC6AB;
-  --neon-light-blue: #587FFC;
-  --neon-bg-dark: #212B38;
-  --neon-card-dark: #2A3546;
+  /* ========== HOME TAB ========== */
+  --home-bg: #100914;
+  --home-heading: #FFF8FF;
+  --home-text: #D4C1DC;
+  --home-accent: #C45CFF;
+  --home-glow: rgba(196, 92, 255, 0.4);
 
-  --glow-violet-effect: 0 0 15px rgba(114, 110, 255, 0.6);
-  --glow-cyan-effect: 0 0 15px rgba(11, 198, 171, 0.6);
+  /* ========== NAVBAR ========== */
+  --nav-bg: rgba(16, 9, 20, 0.85);
+  --nav-text: #D4C1DC;
+  --nav-active: #C45CFF;
+  --nav-border: #42264D;
+
+  /* ========== ABOUT TAB ========== */
+  --about-bg: #1A1020;
+  --about-heading: #FFF8FF;
+  --about-text: #D4C1DC;
+  --about-accent: #A855D5;
+  --about-card: #211429;
+
+  /* ========== SKILLS TAB ========== */
+  --skills-bg: #100914;
+  --skills-card: #211429;
+  --skills-heading: #FFF8FF;
+  --skills-text: #A894B3;
+  --skills-accent: #C45CFF;
+  --skills-border: #42264D;
+
+  /* ========== PROJECTS TAB ========== */
+  --projects-bg: #1A1020;
+  --projects-card: #211429;
+  --projects-heading: #FFF8FF;
+  --projects-text: #D4C1DC;
+  --projects-accent: #E0A0FF;
+  --projects-border: #42264D;
+
+  /* ========== CONTACT TAB ========== */
+  --contact-bg: #100914;
+  --contact-card: #211429;
+  --contact-heading: #FFF8FF;
+  --contact-text: #D4C1DC;
+  --contact-accent: #C45CFF;
+  --contact-border: #8744A0;
+
+  /* ========== FOOTER ========== */
+  --footer-bg: #0C070F;
+  --footer-text: #A894B3;
+  --footer-accent: #C45CFF;
+  --footer-border: #42264D;
+
+  /* ========== COMMON COLORS ========== */
+  --primary: #6C287D;
+  --primary-dark: #35113F;
+  --primary-light: #A855D5;
+  --neon: #C45CFF;
+  --white: #FFFFFF;
+  --black: #080808;
+
+  /* ========== BUTTONS ========== */
+  --button-bg: linear-gradient(135deg, #6C287D, #C45CFF);
+  --button-text: #FFFFFF;
+  --button-hover: #8536A0;
+
+  /* ========== SHADOWS ========== */
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  --neon-shadow: 0 0 20px rgba(196, 92, 255, 0.4);
+
+}
+
+:root {
+  --font-main: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Cormorant Upright", serif;
 }
-
-body {
-    background: var(--neon-bg-dark);
-    font-family: 'Cormorant Upright', serif;
-    min-height: 200vh;
-}
-
+/* NAVBAR */
 .navbar {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1200px;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:var(--nav-bg);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(196, 92, 255, 0.15);
+  z-index: 1000;
 }
 
-.nav-container {
-    background: rgba(42, 53, 70, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1.5px solid var(--neon-cyan);
-    border-radius: 50px;
-    padding: 12px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFFFFF;
-    box-shadow: var(--glow-cyan-effect);
+/* LOGO */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #FFF8FF;
+  font-family: var(--font-main);
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: transform 0.3s ease;
+.nav-logo img {
+  width: 38px;
+  filter: drop-shadow(0 0 8px rgba(196, 92, 255, 0.5));
 }
 
-.logo {
-    width: 35px;
-    height: 35px;
+.logo-dot {
+  color: #C45CFF;
 }
 
-.left h3 {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 1px;
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #BDAAC7;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav-list li a {
-    color: var(--color-light-bg);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 6px 14px;
-    transition: all 0.3s ease;
-    border-radius: 50px;
-    border: 1px solid transparent;
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 0;
+  height: 2px;
+  background: #C45CFF;
+  box-shadow: 0 0 10px #C45CFF;
+  transition: width 0.3s ease;
 }
 
-.nav-list li a:hover {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 8px rgba(11, 198, 171, 0.6);
-    border-color: var(--neon-cyan);
+.nav-links a:hover,
+.nav-links a.active {
+  color: #D99BFF;
 }
 
-.nav-list li:last-child a {
-    background-color: var(--neon-violet);
-    color: #FFFFFF;
-    padding: 8px 22px;
-    border-radius: 25px;
-    font-weight: 600;
-    box-shadow: var(--glow-violet-effect);
-    border: none;
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
 }
 
-.nav-list li:last-child a:hover {
-    background-color: var(--neon-cyan);
-    color: var(--neon-bg-dark);
-    box-shadow: var(--glow-cyan-effect);
+/* NEON BUTTON */
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 21px;
+  border: 1px solid #A855D5;
+  border-radius: 8px;
+  background: rgba(196, 92, 255, 0.08);
+  color: #FFF8FF;
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.left:hover{
-    transform: translateY(-3px);
+.nav-cta span {
+  color: #E0A0FF;
+  font-size: 17px;
+}
+
+.nav-cta:hover {
+  background: #8536A0;
+  border-color: #C45CFF;
+  box-shadow: 0 0 22px rgba(196, 92, 255, 0.3);
+  transform: translateY(-2px);
 }
