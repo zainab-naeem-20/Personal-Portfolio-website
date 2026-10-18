@@ -75,6 +75,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
 body {
   font-family: var(--font-main);
 }
@@ -402,10 +407,17 @@ body {
   background-color: var(--about-bg);
   width: 100%;
   min-height: 100vh;
-  padding: 100px 7%;
+  padding: 80px 7% 80px;
   color: var(--about-heading);
   position: relative;
-  
+}
+
+.about-container h1 {
+  margin: 0 0 28px;
+  font-size: clamp(2.3rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--about-heading);
 }
 
 .about-main {
@@ -418,9 +430,79 @@ body {
 }
 
 .heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    color: var(--about-heading);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: var(--about-heading);
+  display: flex;
+  justify-content: center; 
+  align-items: start;
+}
+.h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--about-accent);
+  padding: 20px;
+}
+
+.about-head{
+  padding: 20px;
+  color: var(--about-text);
+  font-weight: 900;
+}
+
+span{
+  color: var(--home-accent);
+  font-weight: 900;
+  padding: 5px 10px;
+}
+
+.about-description{
+  padding: 20px;
+  color: var(--about-text);
+  font-weight: 600;
+}
+
+.about-skills{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill{
+  /* padding-left: 20px; */
+  color: var(--about-text);
+  font-weight: 400;
+  border: 1px solid var(--about-accent);
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: var(--shadow), var(--neon-shadow);
+}
+
+.button{
+  display: inline-flex;
+  align-items: center;
+  margin: 20px 25px;
+  gap: 15px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  border:1px solid var(--home-accent);
+  background: var(--button-bg);
+  transition: 0.3s ease;
+}
+
+.button a{
+  color: var(--button-text);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
 }
