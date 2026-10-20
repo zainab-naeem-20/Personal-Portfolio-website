@@ -1,6 +1,7 @@
 AOS.init({
-    duration: 2000,
-    once: true
+  duration: 1000,
+  once: true,
+  offset: 100
 });
 
   const words = ["Creative Developer", "Frontend Developer", "UI/UX Designer", "Software Engineering Student"];
