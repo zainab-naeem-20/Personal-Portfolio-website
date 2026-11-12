@@ -13,7 +13,7 @@ AOS.init({
       if (word.length > 0) {
         document.getElementById('typed-text').innerHTML += word.shift();
       } else {
-        setTimeout(deletingEffect, 2000); // 2 sec rukne ke baad delete hoga
+        setTimeout(deletingEffect, 2000); // 
         return;
       }
       timer = setTimeout(loopTyping, 100);
@@ -29,7 +29,7 @@ AOS.init({
         document.getElementById('typed-text').innerHTML = word.join("");
       } else {
         i = (i + 1) % words.length;
-        setTimeout(typingEffect, 500); // agla lafz shuru hone se pehle gap
+        setTimeout(typingEffect, 500); 
         return;
       }
       timer = setTimeout(loopDeleting, 50);
