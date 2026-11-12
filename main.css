@@ -684,3 +684,175 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+
+.road-section {
+    width: 100%;
+    min-height: 1100px;
+    padding: 100px 7%;
+    background: var(--about-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.road-heading {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.road-heading > span {
+    color: var(--neon);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.road-heading h2 {
+    color: #fff;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.road-heading h2 strong {
+    color: var(--neon);
+    text-shadow: 0 0 15px rgba(196, 92, 255, 0.7);
+}
+
+.road-heading p {
+    color: #c5b7ce;
+    font-size: 15px;
+}
+
+.road-wrapper {
+    width: 100%;
+    max-width: 1050px;
+    height: 850px;
+    margin: auto;
+    position: relative;
+}
+
+.road-path {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #21142e, #382044, #21142e);
+    border-left: 2px solid rgba(196, 92, 255, 0.5);
+    border-right: 2px solid rgba(196, 92, 255, 0.5);
+    border-radius: 50% 50% 0 0 / 5% 5% 0 0;
+    box-shadow: 0 0 30px rgba(196, 92, 255, 0.12);
+}
+
+.road-glow {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #c45cff,
+        #8d35ff,
+        #c45cff,
+        transparent
+    );
+    box-shadow: 0 0 18px #c45cff;
+}
+
+.road-center-line {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border-left: 2px dashed rgba(255, 255, 255, 0.55);
+    transform: translateX(-50%);
+}
+
+.road-milestone {
+    position: absolute;
+    width: 44%;
+    display: flex;
+    align-items: center;
+}
+
+.milestone-one {
+    top: 5%;
+    left: 0;
+    justify-content: flex-end;
+}
+
+.milestone-two {
+    top: 28%;
+    right: 0;
+    justify-content: flex-start;
+}
+
+.milestone-three {
+    top: 52%;
+    left: 0;
+    justify-content: flex-end;
+}
+
+.milestone-four {
+    top: 76%;
+    right: 0;
+    justify-content: flex-start;
+}
+
+.road-card {
+    width: 85%;
+    padding: 26px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(196, 92, 255, 0.4);
+    border-radius: 18px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: 0.4s ease;
+}
+
+.road-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--neon);
+    box-shadow: 0 0 25px rgba(196, 92, 255, 0.3);
+}
+
+.road-year {
+    color: var(--neon);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.road-card h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.road-card p {
+    color: #c9bfd1;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.road-point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--neon);
+    border: 4px solid #24152e;
+    border-radius: 50%;
+    box-shadow: 0 0 18px var(--neon);
+    z-index: 3;
+}
+
+.milestone-one .road-point,
+.milestone-three .road-point {
+    right: -15%;
+}
+
+.milestone-two .road-point,
+.milestone-four .road-point {
+    left: -15%;
+}
