@@ -1536,7 +1536,7 @@ img {
 }
 
 .completed-label {
-  color: var(--about-text);
+  color: rgb(17, 241, 17);
   font-size: 13px;
 }
 
