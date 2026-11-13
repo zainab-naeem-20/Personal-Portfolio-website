@@ -464,7 +464,7 @@
         <div class="featured-project" data-aos="fade-up">
           <div class="featured-image">
             <img
-              src="images/viora.jpg"
+              src="./images/viora.jpg"
               alt="MY viora Home Decor E-commerce Website"
             />
             <div class="featured-overlay"></div>
@@ -510,7 +510,7 @@
         <div class="projects-grid">
           <article class="project-card" data-aos="fade-up">
             <div class="project-image">
-              <img src="images/bloom-todo.jpg" alt="Bloom To-Do List" />
+              <img src="./images/bloom-todo.png" alt="Bloom To-Do List" />
               <span class="project-number">01</span>
               <div class="project-image-overlay">
                 <a href="#" class="image-demo-link">View Live Demo ↗</a>
@@ -537,7 +537,7 @@
 
           <article class="project-card" data-aos="fade-up" data-aos-delay="100">
             <div class="project-image">
-              <img src="images/tic-tac-toe.jpg" alt="Tic Tac Toe Game" />
+              <img src="./images/tic-tac-toe.png" alt="Tic Tac Toe Game" />
               <span class="project-number">02</span>
               <div class="project-image-overlay">
                 <a href="#" class="image-demo-link">View Live Demo ↗</a>
@@ -565,7 +565,7 @@
           <article class="project-card" data-aos="fade-up" data-aos-delay="200">
             <div class="project-image">
               <img
-                src="images/crust-crumbs.jpg"
+                src="./images/crust-crumbs.png"
                 alt="Crust and Crumbs Bakery Website"
               />
               <span class="project-number">03</span>
@@ -595,7 +595,7 @@
           <article class="project-card" data-aos="fade-up">
             <div class="project-image">
               <img
-                src="images/calculator.jpg"
+                src="./images/calculator.png"
                 alt="Calculator Web Application"
               />
               <span class="project-number">04</span>
@@ -625,7 +625,7 @@
           <article class="project-card" data-aos="fade-up" data-aos-delay="100">
             <div class="project-image">
               <img
-                src="images/color-palette.jpg"
+                src="./images/color-palette.png"
                 alt="Color Palette Generator"
               />
               <span class="project-number">05</span>
@@ -683,7 +683,7 @@
           <article class="project-card portfolio-project" data-aos="fade-up">
             <div class="project-image">
               <img
-                src="images/personal-portfolio.jpg"
+                src="./images/personal-portfolio.png"
                 alt="Personal Developer Portfolio"
               />
               <span class="project-number">07</span>
